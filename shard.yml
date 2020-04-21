@@ -1,0 +1,13 @@
+name: websocket_issue
+version: 0.1.0
+
+authors:
+  - Bruno Antunes <sardaukar.siet@gmail.com>
+
+targets:
+  websocket_issue:
+    main: src/websocket_issue.cr
+
+crystal: 0.34.0
+
+license: MIT

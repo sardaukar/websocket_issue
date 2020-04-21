@@ -1,0 +1,19 @@
+<html>
+  <head></head>
+  <body>
+    <div>
+      <p>Testing WebSocket issue, check your browser's console</p>
+    </div>
+    <script>
+      var socket = new WebSocket("ws://127.0.0.1:9000/");
+
+      socket.onmessage = function(event) {
+        console.log(event);
+
+        if (event.data == "reload") {
+          window.location.reload(false);
+        }
+      }
+    </script>
+  </body>
+</html>
